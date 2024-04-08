@@ -4,7 +4,7 @@ using System.Windows.Controls;
 
 namespace Kreta.Desktop.Validation
 {
-    public class NameValidator : ValidationRule
+    public class LastNameValidator : ValidationRule
     {
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {

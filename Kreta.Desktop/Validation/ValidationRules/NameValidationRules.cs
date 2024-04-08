@@ -14,6 +14,10 @@ namespace Kreta.Desktop.Validation.ValidationRules
             _nameToValidate = name;
         }
 
-        public bool IsNameShort => false;
+        public bool IsNameShort => _nameToValidate.Length < 2;
+        public bool IsLetterOrDashOrSpace => false;
+        public bool IsFirstLetterUppercase => false; 
+        public bool IsUpperLetterAfterDash => false;
+        public bool IsUpperLetterAfterSpace => false;
     }
 }
